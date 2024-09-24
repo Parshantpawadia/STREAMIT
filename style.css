@@ -82,5 +82,5 @@ padding: 20px 0;
 .hvr_card:hover{
   transform: scale(1.2);
   z-index: 999;
-  box-shadow: 10px 10px 5px 12px rgb(71, 209, 255);
+  box-shadow: 4px 4px 19px 12px rgb(16 16 16) !important;
 }
