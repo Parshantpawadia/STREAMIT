@@ -1,0 +1,86 @@
+body{
+    background-color: #1d2127;
+}
+.left_nav{
+    letter-spacing: 5px;
+    gap: 21px;
+}
+.nav_a{
+    letter-spacing: 2px;
+}
+.banner_info{
+    position: absolute;
+    width: 55%;
+    color: white;
+    left: 30%;
+    bottom: 400px;
+}
+
+.scrollcontainer {
+  /* width: 100%; Full width of the container */
+  overflow: hidden; /* Hide the overflowing part */
+white-space: nowrap;
+padding: 20px 0;
+}
+
+.scrollimages{
+  display: flex;
+   /* Align images in a row */
+   flex-wrap: nowrap;
+  gap: 70px; /* Space between images */
+  animation: scroll 20s linear infinite; /* Apply the scroll animation */
+}
+
+.scrollimages img {
+  flex-shrink: 0; /* Prevent images from shrinking */
+  width: 300px; /* Adjust the image size as needed */
+  height: auto;
+  border-radius: 10px; /* Optional: Round the corners */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the right edge */
+  }
+  100% {
+    transform: translateX(-50%); /* Move to the left edge */
+  }
+}
+
+.header{
+  color: white;
+}
+  .swiper_container{
+    background-color:#191d21;
+  }
+
+  .trending1,.trending2,.trending3,.trending4,.trending5{
+  box-shadow: 10px 10px 5px 12px palevioletred;
+  }
+
+.swiper2{
+  height: 500px;
+  background-color:#0b1015 ;
+  
+}
+@media (min-width:310px) and (max-width:878px){
+  .banner_info h1{
+    display: none;
+  }
+
+  .button_banner{
+    display: flex;
+    flex-direction: column;
+  justify-content: space-evenly;
+    width: 100px;
+  }
+}
+
+.hvr_card{
+  transition: 0.5s ease-in-out;
+}
+.hvr_card:hover{
+  transform: scale(1.2);
+  z-index: 999;
+  box-shadow: 10px 10px 5px 12px rgb(71, 209, 255);
+}
